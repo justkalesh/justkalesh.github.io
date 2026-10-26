@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="google-site-verification" content="pVkWSf72oB8QKP5eUPCUgwrqiVddlte1s9FyZ6iC0QQ" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <style>
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+
+  <title>About Kalash</title>
+  <meta name="description" content="The story of Kalash — learn about my journey, philosophy, and what drives my passion for full-stack engineering." />
+  <meta property="og:title" content="About Kalash" />
+  <meta property="og:description" content="The story of Kalash — learn about my journey, philosophy, and what drives my passion for full-stack engineering." />
+  <meta property="og:image" content="https://justkalesh.github.io/workspace.png" />
+  <meta property="og:url" content="https://justkalesh.github.io/about" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Kalash" />
+  <meta name="twitter:description" content="The story of Kalash — learn about my journey, philosophy, and what drives my passion for full-stack engineering." />
+  <meta name="twitter:image" content="https://justkalesh.github.io/workspace.png" />
+</head>
+<body class="bg-background-cream bg-dot-pattern min-h-screen text-on-surface font-[var(--font-body)] overflow-x-hidden relative flex flex-col">
+
+  <!-- ═══════════════════════════════════════════
+       TOP NAV BAR (Neo-Pop Pill)
+       ═══════════════════════════════════════════ -->
+  <nav class="relative z-50 flex justify-between items-center px-4 py-2 md:px-[24px] md:py-4 mt-2 mb-4 md:mt-[16px] md:mb-[16px] mx-auto w-[90%] rounded-full border-[3px] border-on-surface bg-surface-container shadow-[8px_8px_0px_0px_rgba(13,28,47,1)]" id="main-nav">
+
+    <!-- Brand Logo -->
+    <a href="/" class="md:hidden text-headline-md font-extrabold text-primary tracking-tight">
+      Kalash
+    </a>
+
+    <!-- Desktop Navigation -->
+    <div class="hidden md:flex gap-4 items-center relative" id="desktop-nav">
+      <!-- Sliding Pill -->
+      <div id="nav-pill" class="absolute pointer-events-none rounded-full border-[3px] border-on-surface bg-surface-container shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] transition-all duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] z-0" style="opacity: 0; animation: fadeIn 0.3s forwards 0.1s;"></div>
+
+      <a href="/" class="nav-item active text-primary font-extrabold text-label-lg px-4 py-2 relative z-10 transition-colors">Home</a>
+      <a href="/about" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">About Me</a>
+      <a href="/resume" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">Resume</a>
+      <a href="/projects" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">Projects</a>
+      <a href="/certification" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">Certification</a>
+      <a href="/more" class="nav-item text-on-surface-variant font-medium text-label-lg px-4 py-2 relative z-10 transition-colors">More</a>
+    </div>
+
+    <!-- CTA Button -->
+    <a href="/more#contact" class="hidden md:flex px-6 py-2 rounded-full border-[3px] border-on-surface bg-primary text-on-primary text-label-lg font-extrabold neo-btn-hover shadow-[6px_6px_0px_0px_rgba(13,28,47,1)] cursor-pointer no-underline" style="--hover-shadow-color: rgba(13,28,47,1);">
+      Hire Me
+    </a>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="md:hidden text-on-surface p-2 cursor-pointer" id="mobile-menu-btn" aria-label="Open menu">
+      <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       MOBILE MENU OVERLAY
+       ═══════════════════════════════════════════ -->
+  <div class="mobile-menu fixed inset-0 bg-background-cream bg-dot-pattern z-[60] flex flex-col items-center justify-center gap-6 md:hidden" id="mobile-menu">
+    <button class="absolute top-6 right-6 text-primary cursor-pointer" id="mobile-menu-close" aria-label="Close menu">
+      <span class="material-symbols-outlined text-3xl">close</span>
+    </button>
+    <a href="/" class="mobile-nav-item text-headline-sm text-on-surface-variant font-medium transition-colors">Home</a>
+    <a href="/about" class="mobile-nav-item text-headline-sm text-on-surface-variant font-medium transition-colors">About Me</a>
+    <a href="/resume" class="mobile-nav-item text-headline-sm text-on-surface-variant font-medium transition-colors">Resume</a>
+    <a href="/projects" class="mobile-nav-item text-headline-sm text-on-surface-variant font-medium transition-colors">Projects</a>
+    <a href="/certification" class="mobile-nav-item text-headline-sm text-on-surface-variant font-medium transition-colors">Certification</a>
+    <a href="/more" class="mobile-nav-item text-headline-sm text-on-surface-variant font-medium transition-colors">More</a>
+    <a href="/more#contact" class="px-8 py-3 rounded-full border-[3px] border-on-surface bg-primary text-on-primary text-label-lg font-extrabold neo-btn-hover shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] mt-4 cursor-pointer active:translate-y-[2px] active:shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] transition-all no-underline" style="--hover-shadow-color: rgba(13,28,47,1);">
+      Hire Me
+    </a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+       ═══════════════════════════════════════════ -->
+  <main class="relative flex-grow w-full max-w-6xl mx-auto px-4 md:px-[24px] flex flex-col gap-8 md:gap-[96px] py-12 md:py-[96px]">
+<!-- Hero Section -->
+<section class="text-center relative">
+<h1 class="text-5xl md:text-6xl font-black text-primary mb-4 md:mb-6 relative inline-block z-10 leading-tight">
+                The Story of Kalash
+                <span class="absolute -top-6 -right-10 text-4xl rotate-12 bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full border-[2px] border-on-surface shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] hover:scale-110 active:scale-95 transition-transform hidden md:block">👋</span>
+</h1>
+</section>
+<!-- Bio & Philosophy Bento -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Bio Card -->
+<div class="col-span-1 md:col-span-8 bg-surface-container-high rounded-3xl p-5 md:p-8 border-[3px] border-on-surface shadow-[8px_8px_0px_0px_rgba(13,28,47,1)] bouncy-hover relative overflow-hidden">
+<div class="absolute -bottom-4 -right-4 w-32 h-32 bg-primary-fixed rounded-full opacity-50 blur-2xl"></div>
+<h2 class="text-4xl md:text-7xl font-black text-on-surface mb-6 md:mb-8 tracking-tight">Hello World!</h2>
+<p class="text-body-lg text-on-surface-variant relative z-10 leading-relaxed">
+                    I am a driven and enthusiastic Computer Science and Engineering student at Lovely Professional University (LPU), dedicated to applying theoretical knowledge to practical, real-world challenges. Possessing a strong passion for solving real-life problems, I am actively seeking opportunities to utilize foundational skills in Python, HTML, CSS, JavaScript, and SQL to develop innovative and user-centric solutions. Known for exceptional communication and leadership skills, I thrive in collaborative environments, effectively bridging technical concepts with non-technical stakeholders, and am committed to continuous learning and making a tangible impact in the field of technology.
+                </p>
+</div>
+<!-- Philosophy Card -->
+<!-- Playful Image Card -->
+<div class="col-span-1 md:col-span-4 bg-white rounded-3xl border-[3px] border-on-surface shadow-[8px_8px_0px_0px_rgba(13,28,47,1)] bouncy-hover relative overflow-hidden min-h-[300px]">
+  <img src="/playful.png" alt="Kalash celebrating at computer" class="absolute inset-0 w-full h-full object-cover object-center" />
+</div>
+</section>
+<!-- Skills Section -->
+<section class="flex flex-col items-center gap-8 mb-8">
+  <h2 class="text-headline-md font-extrabold text-on-surface ">Skills</h2>
+  <div class="w-full bg-surface-container-highest rounded-3xl p-5 md:p-8 border-[3px] border-on-surface shadow-[8px_8px_0px_0px_rgba(13,28,47,1)] bouncy-hover relative overflow-hidden">
+    <div class="absolute -top-4 -right-4 w-32 h-32 bg-secondary-fixed rounded-full opacity-50 blur-2xl pointer-events-none"></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+      
+      <!-- Languages -->
+      <div>
+        <h3 class="text-body-lg font-extrabold text-primary mb-3">Languages</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="inline-block bg-primary-fixed text-on-primary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform cursor-default">Python</span>
+          <span class="inline-block bg-primary-fixed text-on-primary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform cursor-default">JavaScript</span>
+          <span class="inline-block bg-primary-fixed text-on-primary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform cursor-default">C</span>
+          <span class="inline-block bg-primary-fixed text-on-primary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform cursor-default">C++</span>
+        </div>
+      </div>
+      
+      <!-- Technologies -->
+      <div>
+        <h3 class="text-body-lg font-extrabold text-secondary mb-3">Technologies</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="inline-block bg-secondary-fixed text-on-secondary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform cursor-default">HTML</span>
+          <span class="inline-block bg-secondary-fixed text-on-secondary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform cursor-default">CSS</span>
+          <span class="inline-block bg-secondary-fixed text-on-secondary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform cursor-default">Node.js</span>
+          <span class="inline-block bg-secondary-fixed text-on-secondary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform cursor-default">React</span>
+          <span class="inline-block bg-secondary-fixed text-on-secondary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform cursor-default">Flutter</span>
+        </div>
+      </div>
+
+      <!-- Databases/Tools -->
+      <div>
+        <h3 class="text-body-lg font-extrabold text-tertiary mb-3">Databases & Tools</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="inline-block bg-tertiary-fixed text-on-tertiary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform cursor-default">Supabase</span>
+          <span class="inline-block bg-tertiary-fixed text-on-tertiary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform cursor-default">MongoDB</span>
+          <span class="inline-block bg-tertiary-fixed text-on-tertiary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform cursor-default">Git</span>
+          <span class="inline-block bg-tertiary-fixed text-on-tertiary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform cursor-default">GitHub</span>
+          <span class="inline-block bg-tertiary-fixed text-on-tertiary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform cursor-default">Antigravity</span>
+          <span class="inline-block bg-tertiary-fixed text-on-tertiary-fixed text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform cursor-default">Stitch</span>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div>
+        <h3 class="text-body-lg font-extrabold text-on-surface-variant mb-3">Soft Skills</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="inline-block bg-surface text-on-surface text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform cursor-default">Problem Solving</span>
+          <span class="inline-block bg-surface text-on-surface text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform cursor-default">Leadership</span>
+          <span class="inline-block bg-surface text-on-surface text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform cursor-default">Time Management</span>
+          <span class="inline-block bg-surface text-on-surface text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform cursor-default">Adaptability</span>
+          <span class="inline-block bg-surface text-on-surface text-label-sm px-4 py-2 rounded-full border-[2px] border-on-surface shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] font-bold hover:scale-110 transition-transform cursor-default">Flexibility</span>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Interests Section -->
+<section class="flex flex-col items-center gap-8">
+<h2 class="text-headline-md font-extrabold text-on-surface ">What keeps me going</h2>
+<div class="flex flex-wrap justify-center gap-4">
+<div class="border-[2px] border-on-surface shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] hover:scale-110 active:scale-95 transition-transform bg-secondary-fixed text-on-secondary-fixed text-label-lg font-bold px-6 py-3 rounded-full flex items-center gap-2 transform -rotate-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_cafe</span>
+                    Coffee Enthusiast
+                </div>
+<div class="border-[2px] border-on-surface shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] hover:scale-110 active:scale-95 transition-transform bg-primary-fixed text-on-primary-fixed-variant text-label-lg font-bold px-6 py-3 rounded-full flex items-center gap-2 transform rotate-3">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">design_services</span>
+                    UI Tinkerer
+                </div>
+<div class="border-[2px] border-on-surface shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] hover:scale-110 active:scale-95 transition-transform bg-tertiary-fixed text-on-tertiary-fixed text-label-lg font-bold px-6 py-3 rounded-full flex items-center gap-2 transform -rotate-1">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">extension</span>
+                    Problem Solver
+                </div>
+<div class="border-[2px] border-on-surface shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] hover:scale-110 active:scale-95 transition-transform bg-surface-container-high text-on-surface-variant text-label-lg font-bold px-6 py-3 rounded-full flex items-center gap-2 transform rotate-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">headphones</span>
+                    Lo-Fi Beats
+                </div>
+</div>
+</section>
+
+    
+  
+  
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════ -->
+  <footer class="w-full border-t-[3px] border-on-surface mt-[96px] bg-background-cream flex flex-col md:flex-row justify-between items-center px-[16px] md:pl-[48px] md:pr-[120px] pt-[32px] pb-[96px] md:pb-[24px] gap-6 md:gap-0">
+
+    <!-- Copyright -->
+    <div class="text-body-md text-on-surface-variant text-center md:text-left mb-4 md:mb-0">
+      Made by <a href="https://buildingitlive.com" target="_blank" rel="noopener noreferrer" class="font-bold text-primary hover:underline hover:text-primary-container transition-colors">Building It Live.</a>
+    </div>
+
+    <!-- Links -->
+    <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+      <a href="https://github.com/justkalesh" target="_blank" rel="noopener noreferrer" class="text-label-sm text-on-surface-variant hover:text-primary hover:scale-105 transition-transform active:scale-95 font-bold">GitHub</a>
+      <a href="https://www.linkedin.com/in/justkalesh/" target="_blank" rel="noopener noreferrer" class="text-label-sm text-on-surface-variant hover:text-primary hover:scale-105 transition-transform active:scale-95 font-bold">LinkedIn</a>
+      <a href="https://x.com/yours_kalash" target="_blank" rel="noopener noreferrer" class="text-label-sm text-on-surface-variant hover:text-primary hover:scale-105 transition-transform active:scale-95 font-bold">X</a>
+      <a href="https://leetcode.com/u/justkalesh/" target="_blank" rel="noopener noreferrer" class="text-label-sm text-on-surface-variant hover:text-primary hover:scale-105 transition-transform active:scale-95 font-bold">LeetCode</a>
+      <a href="https://www.instagram.com/kalash.who/" target="_blank" rel="noopener noreferrer" class="text-label-sm text-on-surface-variant hover:text-primary hover:scale-105 transition-transform active:scale-95 font-bold">Instagram</a>
+      <a href="mailto:parth.ie.kalash@gmail.com" target="_blank" rel="noopener noreferrer" class="text-label-sm text-on-surface-variant hover:text-primary hover:scale-105 transition-transform active:scale-95 font-bold">Email</a>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       SCROLL TO TOP BUTTON
+       ═══════════════════════════════════════════ -->
+  <button id="scroll-to-top" class="fixed bottom-4 right-4 md:bottom-8 md:right-8 w-12 h-12 md:w-14 md:h-14 rounded-full border-[3px] border-on-surface bg-primary text-on-primary flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(13,28,47,1)] opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 active:scale-95 hover:shadow-[2px_2px_0px_0px_rgba(13,28,47,1)] active:shadow-[0px_0px_0px_0px_rgba(13,28,47,1)]" style="z-index: 9990;" aria-label="Scroll to top">
+    <svg class="w-5 h-5 md:w-6 md:h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <!-- ═══════════════════════════════════════════
+       CUSTOM CURSOR
+       ═══════════════════════════════════════════ -->
+  <div class="hidden md:block fixed pointer-events-none drop-shadow-md" id="custom-cursor" style="will-change: transform; left: 0; top: 0; transform-origin: 17.33px 2.66px; width: 32px; height: 32px; z-index: 9999;">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="#ffffff" stroke="#1c1b1e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2C10.9 2 10 2.9 10 4V10.5C9.5 10.2 8.8 10 8 10C6.3 10 5 11.3 5 13L8 20H16L19 14V11C19 9.9 18.1 9 17 9H16V4C16 2.9 15.1 2 14 2H12Z" />
+    </svg>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
+

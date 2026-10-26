@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Shadow -->
+  <rect x="16" y="16" width="80" height="80" rx="20" fill="#0d1c2f" />
+  <!-- Main Box -->
+  <rect x="6" y="6" width="80" height="80" rx="20" fill="#ae2f34" stroke="#0d1c2f" stroke-width="6"/>
+  <!-- Letter -->
+  <text x="46" y="68" font-family="system-ui, sans-serif" font-weight="900" font-size="65" fill="#ffffff" text-anchor="middle">K</text>
+</svg>
